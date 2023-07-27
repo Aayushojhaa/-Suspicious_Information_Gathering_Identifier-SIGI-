@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <title>SIGI</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+
+
+    <!--####################### Header Starts Here ###################-->
+    <div class="header-container">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 left-item">
+                        <ul>
+                            <li><i class="fas fa-envelope-square"></i> SIGI@gmail.com</li>
+                            <li class="d-none d-sm-block"><i class="fas fa-phone-square"></i>+91 90XXXXXX09</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block right-item">
+                        <ul>
+                            <li><a href="https://github.com/Anshul-Padiyar/SIGI.git"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <nav id="menu-jk" class="container-fluid  no-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-12 logo">
+                        <img class="log-gray" src="assets\images\webLogo-dark.png" alt="">
+                        <a data-toggle="collapse" data-target="#nav-head" href="#nav-head"><i
+                                class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                    </div>
+                    <div id="nav-head" class="col-md-10 nav-div d-none d-md-block">
+                        <ul>
+                            <li><a class="js-scroll-trigger" href="index.html">Home</a></li>
+                            <li><a class="js-scroll-trigger" href="modules.html">Modules</a></li>
+                            <li><a class="js-scroll-trigger" href="contact_us.html">Contact Us</a></li>
+                            <li><a class="js-scroll-trigger" href="about_us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!--###################### Page Title Starts Here ############################-->
+
+    <div class="page-title titl-2">
+        <div class="container">
+            <div class="row">
+                <h2>IP Validation</h2>
+                <p> Home <i class="fas fa-angle-double-right"></i> Modules <i class="fas fa-angle-double-right"></i> IP
+                    Validation </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--###################### IP Validation Starts Here ############################-->
+
+    <div class="row contact-rooo no-margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9" style="padding-top:40px;">
+                    <h2>IP Validation</h2> <br>
+                </div>
+            </div>
+            <div class="row">
+                <div style="padding:10px" class="col-sm-8">
+
+                    <div class="row cont-row">
+                        <div class="col-sm-3">
+                            <label><h4>IP Address</h4></label>
+                            <span>:</span></div>
+                        <div class="col-sm-6">
+                            <input type="text" id="input" class="form-control input-sm" placeholder="xxx.xxx.xxx.xxx"
+                                required>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="btn btn-success btn-sm" onclick="getGeolocation()">Search</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row cont-row">
+                        <div class="col-sm-3">
+                            <label><h4>Results</h4></label>
+                            <span>:</span>
+                        </div>
+                        <div class="col-sm-8">
+                            <dl class="row">
+                                <dt class="col-sm-4">Message:</dt>
+                                <dd class="col-sm-8"><span id="message"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">Status:</dt>
+                                <dd class="col-sm-8"><span id="status"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">Continent:</dt>
+                                <dd class="col-sm-8"><span id="continent"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">Country:</dt>
+                                <dd class="col-sm-8"><span id="country"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">Country Code:</dt>
+                                <dd class="col-sm-8"><span id="countryCode"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">Region:</dt>
+                                <dd class="col-sm-8"><span id="region"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">Region Name:</dt>
+                                <dd class="col-sm-8"><span id="regionName"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">City:</dt>
+                                <dd class="col-sm-8"><span id="city"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">ZIP Code:</dt>
+                                <dd class="col-sm-8"><span id="zip"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">ISP:</dt>
+                                <dd class="col-sm-8"><span id="isp"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">Organization:</dt>
+                                <dd class="col-sm-8"><span id="org"></span></dd>
+                                <br>
+                                <dt class="col-sm-4">Query:</dt>
+                                <dd class="col-sm-8"><span id="query"></span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div style="margin:50px" class="serv">
+                        <h2 style="margin-top:10px;"> <img src="assets/images/ip_box.gif" alt=""></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--####################### footer Starts Here ###################-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>About Us</h2>
+                    <p>
+                        SIGI was founded in the year 2022 as a free service that detects and then validates the
+                        suspicious files, URLs, Emails, Phone Numbers for different types of malware and malicious
+                        content using APIs (Application Programming Interfaces) and website
+                        scanners.
+                    </p>
+                    <p>
+                        We focus on technologies that promise to reduce costs, streamline processes and speed
+                        time-to-market, Backed by our strong quality processes and rich experience managing global...
+                    </p>
+                    <br>
+                </div>
+                <div class="col-md-1 col-sm-12">
+                </div>
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Contact Us</h2>
+                    <address class="md-margin-bottom-40">
+                        Acropolis Institute os Technology and Research,
+                        Indore, India <br>
+                        Phone: +91 919676xxxxx <br>
+                        Email: <a href="#" class="">sigi.nujhw@slmail.me</a><br>
+                        Web: <a href="#" class="">www.sigi.in</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <div class="copy">
+        <div class="container">
+            <a>2022 &copy; All Rights Reserved | Designed and Developed by Team SIGI</a>
+
+            <span>
+                <a href="https://github.com/Anshul-Padiyar/SIGI.git"><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-google-plus-g"></i></a>
+                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+            </span>
+        </div>
+    </div>
+
+
+</body>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="assets/js/script.js"></script>
+
+<script>
+    function getGeolocation() {
+        var input = $('#input').val();
+        var url = 'http://ip-api.com/json/' + input + '?fields=status,message,mobile,continent,country,countryCode,region,regionName,city,zip,isp,org,query';
+
+        $.getJSON(url, function (data) {
+            $('#status').text(data.status);
+            $('#message').text(data.message);
+            $('#mobile').text(data.mobile);
+            $('#continent').text(data.continent);
+            $('#country').text(data.country);
+            $('#countryCode').text(data.countryCode);
+            $('#region').text(data.region);
+            $('#regionName').text(data.regionName);
+            $('#city').text(data.city);
+            $('#zip').text(data.zip);
+            $('#isp').text(data.isp);
+            $('#org').text(data.org);
+            $('#query').text(data.query);
+        });
+    }
+
+</script>
+
+
+</html>
